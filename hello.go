@@ -31,7 +31,7 @@ func main() {
 
 	// Note: This is a bug in the current GO Admin SDK. It requires this environment
 	// variable to be set to talk to the emulator despite the official documentation
-	// stating otherwise. Issue is raised in the GO SDK repo here: TODO
+	// stating otherwise. Issue is raised in the GO SDK repo here: https://github.com/firebase/firebase-admin-go/issues/520
 	err3 := os.Setenv("STORAGE_EMULATOR_HOST", "localhost:9199")
 	if err3 != nil {
 		log.Fatalln(err3)
